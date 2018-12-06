@@ -21,4 +21,9 @@ class Language(object):
         self.genPlace, self.genConj = genPlace, genConj
         self.name = name
     def __repr__(self):
-        return self.name
+        return (self.name, self.sentenceStruct, self.syllableStruct, 
+            self.gender, self.negationPlace, self.negationConj, self.tensePlace,
+            self.tenseConj, self.adjPlace, self.pluralityPlace, 
+            self.pluralityConj, self.accusePlace, self.accuseConj, 
+            self.nomPlace, self.nomConj, self.datePlace, self.dataConj, 
+            self.genPlace, self.genConj, self.name)

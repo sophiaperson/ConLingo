@@ -20,9 +20,7 @@ allConsonants = {'m':'voiced bilabial nasal',
     'ŋ':'voiced velar nasal', 'p':'unvoiced bilabial stop', 
     'b':'voiced bilabial stop', 't':'unvoiced alveolar stop', 
     'd':'voiced alveolar stop', 'k':'unvoiced velar stop', 
-    'ɡ':'voiced velar stop',
-    'ts':'unvoiced alveolar affricate', 't̠ʃ':'unvoiced post-Alveolar affricate', 
-    'd̠ʒ':'voiced post-Alveolar affricate', 's':'unvoiced alveolar fricative', 
+    'ɡ':'voiced velar stop','s':'unvoiced alveolar fricative', 
     'z':'voiced alveolar fricative', 'ʃ':'unvoiced post-Alveolar fricative', 
     'ʒ':'voiced post-Alveolar fricative', 'ɸ':'unvoiced bilabial fricative', 
     'β':'voiced bilabial fricative', 'f':'unvoiced labiodental fricative',	
@@ -30,8 +28,11 @@ allConsonants = {'m':'voiced bilabial nasal',
     'ð':'voiced interdental fricative', 'x':'unvoiced velar fricative', 
     'ɣ':'voiced velar fricative', 'h':'unvoiced glottal fricative',
     'ɹ':'voiced alveolar retroflex liquid', 'j':'voiced palatal glide', 
-    'r':'voiced alveolar trill', 'l':'voiced alveolar lateral liquid',
+    'l':'voiced alveolar lateral liquid',
     'w':'voiced bilabial glide'}
+
+allPhones = allVowels.copy()
+allPhones.update(allConsonants)
 
 def createVowels():
     vowelObjects = set()
